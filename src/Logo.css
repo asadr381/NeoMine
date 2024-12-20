@@ -1,0 +1,17 @@
+/* Logo.css */
+.logo-container {
+    display: flex;
+    justify-content: flex-start; /* Align logo to the left */
+    align-items: center;
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Space from the top */
+    left: 10px; /* Space from the left */
+    z-index: 10; /* Ensure it's above other elements */
+  }
+  
+  .logo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
