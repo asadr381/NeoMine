@@ -89,24 +89,24 @@ html, body {
 /* Responsive adjustments for medium screens (tablets) */
 @media (max-width: 1024px) {
   .chart-container {
-      width: 70%; /* Increase width for smaller screens */
-      height: 50vh; /* Adjust height for better fit */
+      width: auto; /* Increase width for smaller screens */
+      height: auto; /* Adjust height for better fit */
   }
 }
 
 /* Responsive adjustments for small screens (mobile) */
 @media (max-width: 768px) {
   .chart-container {
-      width: 90%; /* Almost full-width for small devices */
-      height: 40vh; /* Reduce height to fit smaller screens */
+      width: auto; /* Almost full-width for small devices */
+      height: auto; /* Reduce height to fit smaller screens */
   }
 }
 
 /* Responsive adjustments for very small screens */
 @media (max-width: 480px) {
   .chart-container {
-      width: 100%; /* Full width for the smallest screens */
-      height: 35vh; /* Compact height for minimal space */
+      width: auto; /* Full width for the smallest screens */
+      height: auto; /* Compact height for minimal space */
   }
 }
 
