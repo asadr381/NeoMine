@@ -82,7 +82,7 @@ html, body {
 /* Base styles for the chart container */
 .chart-container {
   width: 50%; /* Default width for larger screens */
-  height: 60vh; /* Default height relative to viewport height */
+ /* Default height relative to viewport height */
   margin: auto; /* Center the container horizontally */
 }
 
