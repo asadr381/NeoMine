@@ -180,6 +180,7 @@ const App = () => {
           )}
         </div>
         <h6>Boost the Mine</h6>
+           <h6> "Withdraw" button will only be available once the token is launched on Randium</h6>
       </div>
     </div>
   );
