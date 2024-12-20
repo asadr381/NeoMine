@@ -139,6 +139,9 @@ const App = () => {
         <div className="welcome">
           <h1>Welcome, {user.displayName}</h1>
           <button onClick={handleLogout}>Logout</button>
+  <button onClick={() => window.open('https://t.me/neominecoin', '_blank')}>
+            Join Telegram
+          </button>
         </div>
         <div className="supply">
           <h2>Total Supply: {totalSupply}</h2>
