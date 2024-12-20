@@ -7,11 +7,44 @@
     top: 10px; /* Space from the top */
     left: 10px; /* Space from the left */
     z-index: 10; /* Ensure it's above other elements */
-  }
-  
-  .logo {
-    width: 200px;
-    height: 200px;
+}
+
+.logo {
+    width: 150px; /* Default size for medium to large screens */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover;
-  }
-  
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .logo {
+        width: 120px; /* Reduce size for tablets */
+    }
+
+    .logo-container {
+        top: 8px; /* Adjust positioning for smaller screens */
+        left: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px; /* Smaller logo for mobile */
+    }
+
+    .logo-container {
+        top: 6px; /* Adjust positioning further */
+        left: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px; /* Smallest size for very small screens */
+    }
+
+    .logo-container {
+        top: 4px; /* Minimal spacing for small screens */
+        left: 4px;
+    }
+}
