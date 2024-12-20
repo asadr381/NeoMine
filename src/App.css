@@ -79,11 +79,37 @@ html, body {
     background-position: 0% 50%;
   }
 }
+/* Base styles for the chart container */
 .chart-container {
-  width: 50%;
-  height: 60vh;
-  margin-bottom: 20px;
+  width: 50%; /* Default width for larger screens */
+  height: 60vh; /* Default height relative to viewport height */
+  margin: auto; /* Center the container horizontally */
 }
+
+/* Responsive adjustments for medium screens (tablets) */
+@media (max-width: 1024px) {
+  .chart-container {
+      width: 70%; /* Increase width for smaller screens */
+      height: 50vh; /* Adjust height for better fit */
+  }
+}
+
+/* Responsive adjustments for small screens (mobile) */
+@media (max-width: 768px) {
+  .chart-container {
+      width: 90%; /* Almost full-width for small devices */
+      height: 40vh; /* Reduce height to fit smaller screens */
+  }
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 480px) {
+  .chart-container {
+      width: 100%; /* Full width for the smallest screens */
+      height: 35vh; /* Compact height for minimal space */
+  }
+}
+
 
 /* Button Styling */
 .login-button, .mine-button, .boost-button {
