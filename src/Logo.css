@@ -1,12 +1,13 @@
 /* Logo.css */
 .logo-container {
     display: flex;
-    justify-content: flex-start; /* Align logo to the left */
+    justify-content: flex-start; /* Default: Align logo to the left */
     align-items: center;
     position: absolute; /* Position it absolutely */
     top: 10px; /* Space from the top */
     left: 10px; /* Space from the left */
     z-index: 10; /* Ensure it's above other elements */
+    width: 100%; /* Ensure it spans full width for centering on small screens */
 }
 
 .logo {
@@ -16,35 +17,24 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) {
-    .logo {
-        width: 120px; /* Reduce size for tablets */
-    }
-
-    .logo-container {
-        top: 8px; /* Adjust positioning for smaller screens */
-        left: 8px;
-    }
-}
-
 @media (max-width: 768px) {
+    .logo-container {
+        justify-content: center; /* Center the logo */
+        left: 0; /* Override left positioning */
+        top: 6px; /* Adjust positioning for smaller screens */
+    }
+
     .logo {
         width: 100px; /* Smaller logo for mobile */
-    }
-
-    .logo-container {
-        top: 6px; /* Adjust positioning further */
-        left: 6px;
     }
 }
 
 @media (max-width: 480px) {
-    .logo {
-        width: 80px; /* Smallest size for very small screens */
+    .logo-container {
+        top: 4px; /* Adjust positioning for very small screens */
     }
 
-    .logo-container {
-        top: 4px; /* Minimal spacing for small screens */
-        left: 4px;
+    .logo {
+        width: 80px; /* Smallest size for very small screens */
     }
 }
