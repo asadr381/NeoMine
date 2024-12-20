@@ -6,7 +6,7 @@ import { auth, db } from './firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { getDoc, setDoc, doc } from 'firebase/firestore';
 import { Line } from 'react-chartjs-2';
-import logo from './images/logo.png';
+import logo from './logo.png';
 import {
   Chart as ChartJS,
   LineElement,
